@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+  background-color:"#efb615"
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.container {
+  position: relative;
+}
+
+.container .card {
+  /* position: relative;
+  width: 320px;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden; */
+}
+
+.container .card:before {
+  /* content: "";
+  position: absolute;
+  top: 256p;
+  left: 35px;
+  width: 89%;
+  height: 97%;
+  background: rgb(247 127 16);
+  clip-path: circle(150px at 45% 20%);
+  transition: 0.5s ease-in-out; */
+}
+
+.container .card:hover:before {
+  /* clip-path: circle(300px at 80% -20%); */
+}
+
+.container .card:after {
+  /* content: "";
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04); */
+
+}
+
+.container .card .imgBx {
+  /* position: absolute;
+  top: 50%; */
+  transform: translate(-50% -50%);
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+
+.container .card:hover .imgBx {
+  top: 0%;
+  transform: translate(75% 75%);
+  /* bug  */
+}
+
+.container .card .imgBx img {
+  position: absolute;
+  top: 50%;
+  /* left: 15%;  */
+  /* transform: translate(-50%, -50%) rotate(20deg); */
+ /* width: 270px; */
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
